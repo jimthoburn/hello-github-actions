@@ -16,3 +16,5 @@ jobs:
         node-version: 12.x
     # - run: npm ci
     - run: node .github/actions/hi.js
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
